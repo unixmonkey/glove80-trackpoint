@@ -1,4 +1,4 @@
-# Glove80-Trackpoint
+ # Glove80-Trackpoint
 Trackpoint sidecar mod for the Glove80 keyboard
 
 ## Why
@@ -24,20 +24,29 @@ So I bought the Glove80, and a 3d printer, and got to work. This is helping me, 
 
 ## Test the trackpoint
 
-While unlikely, it's entirely possible the trackpoint may be DOA, so plug it in and make sure it works before we start questioning our sanity if it somehow no longer works after soldering.
+![trackpoint](https://github.com/user-attachments/assets/463f927c-a512-4b79-8001-11ee43161e15)
+
+While unlikely, it's entirely possible the trackpoint may be DOA (Dead on Arrival), so plug it in to a computer and make sure it works before we start questioning our sanity if it somehow no longer works after soldering.
 This is also a good time to install [USB Overdrive](https://www.usboverdrive.com/) (mac), or equivalent software for your computer. We will be installing the Trackpoint board mostly upside-down, so we will want to invert the X and Y axis.
 
-When plugged in and USB Overdrive installed, go into it's settings, and choose the Trackpoint, which shows up for me as `Mouse VID 0x1018 PID 0x1006, Any Application`, then go into "Advanced Settings", and check the boxes next to "Invert X axis" and "Invert Y axis".
+When plugged in and USB Overdrive installed, go into it's settings, and choose the Trackpoint, which shows up for me as `Mouse VID 0x1018 PID 0x1006, Any Application`.
+
+Then go into "Advanced Settings", and check the boxes next to "Invert X axis" and "Invert Y axis":
+![overdrive2](https://github.com/user-attachments/assets/8e26b8f9-85ca-4943-9d29-049e2e78bd0c)
 
 Now, the trackpoint should work correctly while upside-down.
 
 ## Soldering
 
-The trackpoint rocker board (blue) comes pre-soldered onto the control board (green), but together they are too big (in my opinion) to get the trackpoint in a spot really close enough to comfortably reach, so let's de-solder that, and re-solder the 2 parts together using some wire instead. Be sure to solder on the BACK side of the blue board, or you'll have trouble with the trackpoint being flush when mounted to the case (I made this mistake).
+The trackpoint rocker board (blue) comes pre-soldered onto the control board (green), but together they are too big (in my opinion) to get the trackpoint in a spot really close enough to comfortably reach, so let's de-solder that, and re-solder the 2 parts together using some wire instead. Be sure to solder on the BACK side of the blue board, or you'll have trouble with the trackpoint being flush when mounted to the case. I made this mistake, as seen in this photo. It still works, but is less flush to the surface:
 
-These contacts are very close to each other, so be careful your solder and wires doesn't bridge from one solder point to its neighboring ones. If it does, de-solder and try again. Once finished, plug it in and make sure it still works. If it does, I recommend hot-gluing the wires in place, and testing again.
+![trackpoint half-soldered](https://github.com/user-attachments/assets/a12ba8c3-72b7-4700-80ef-d99302c23af2)
+
+These contacts are very close to each other, so be careful your solder and wires doesn't bridge from one solder point to its neighboring ones. If it does, de-solder and try again. Once finished, plug it in and make sure it still works. If it does, I recommend hot-gluing the wires in place (to protect them from bridging and breaking off easily), and testing again.
 
 Assuming that went well, the next step is to add the USB-C connector (if desired). First take a photo of the wires to make sure you know what color goes where. Here's mine if you forgot:
+
+![usb-c soldering](https://github.com/user-attachments/assets/853847c8-6fb5-4ad3-ba3a-a044ed8be759)
 
 The Trackpoint only uses 4 pins on it's built-in cable, and the Treedix connector has 6. The red wire is power (VBUS), the black wire is ground (GND), the blue wire is Data - (D-), and the green wire is data + (D+). Solder your wires onto the top surface. There are little holes so you can push your wires though before soldering them in place.
 
@@ -70,10 +79,12 @@ Make sure the top and bottom parts fit neatly together. I recommend carefully sc
 
 Because the mouse we've just printed doesn't have the mouse buttons wired up, we probably want to map some keys on the Glove80 to act as mouse buttons.
 I've setup the 2 right and bottom-most thumb keys to act as mouse buttons in [my layout](https://my.glove80.com/#/layout/user/2e9038ef-1ab4-45dc-9edd-4a34c662d1fc) by assigning them to the "CUSTOM" behavior with "&mkp MB1" for left-click and "&mkp MB2" for right-click (I did not setup middle-click).
+![thumb-buttons](https://github.com/user-attachments/assets/51838a18-f06e-4d03-8430-dec2b59a7873)
 
 It is not at all necessary, but you might consider setting up a "mouse" layer like mine above, now that you will be building a firmware capable of emulating a mouse, you might want to take advantage of that.
 
 By default, the MoErgo editor does not build a ZMK firmware with mouse support, so after saving your changes, but before building the firmware, go to "settings" at the top, and change the firmware to "community.pr23.mouse-keys.20240223.113355" or the modern equivalent you see there. One day, ZMK should merge mouse support into main, and this step may not be needed any longer.
+![mouse-pr](https://github.com/user-attachments/assets/9fc0f0fd-7894-47cb-8bb1-e3797d4ec1f4)
 
 Once you flash your Glove80 with the new firmware, these keys should act as mouse buttons.
 
