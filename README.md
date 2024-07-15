@@ -62,7 +62,11 @@ This model should serve as a ready-to-print piece for you, however, I've made so
 - It has a hole and a platform inside for the USB-C connector
 - It has a detachable bottom cover to contain and protect the electronics inside
 
+![left hand model](https://github.com/user-attachments/assets/428b3df6-0126-462a-828f-b1354cc94f4d)
+
 I've taken a liking to using this ABS-like resin, but feel free to use what you like.
+
+If you want to use on the right-hand of the Glove80, mirror the model along the flat outer surface.
 
 Make sure that the USB-c board platform, and bottom screw surfaces are flat and free from support dots. Use the edge of a flathead screwdriver or knife if needed.
 Make sure the top and bottom parts fit neatly together. I recommend carefully screwing them together before putting anything inside.
