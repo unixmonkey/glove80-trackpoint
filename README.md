@@ -1,24 +1,26 @@
  # Glove80-Trackpoint
 Trackpoint sidecar mod for the Glove80 keyboard
 
+![glove80-left-with-trackpoint](https://github.com/user-attachments/assets/d2faad88-5a96-45db-8982-0737be08cd68)
+
 ## Why
 
 I recently started getting RSI-like pain and went on a deep dive into the word of ergonomic split keyboards, but I knew part of my issue was my mouse usage habits, and that moving from the keyboard to the mouse (or trackpad) over and over again certainly wasn't helping.
 
 Unfortunately, there currently are very few commercially available ergonomic keyboards that have built-in pointing devices.
-However, the [MoErgo Glove80](https://www.moergo.com/collections/glove80-keyboards) keyboard tries to be highly ergonomic, as well as [customizable](https://www.moergo.com/pages/glove80-ergonomic-keyboard-customization) platform, and even provides built-in anchor points and some basic 3d models that can be used to add your own pointing devices right between the thumb cluster and forefinger areas. I figured this could be how I could possibly make the Glove80 the perfect keyboard for me.
+However, the [MoErgo Glove80](https://www.moergo.com/collections/glove80-keyboards) keyboard tries to be highly ergonomic, as well as [customizable](https://www.moergo.com/pages/glove80-ergonomic-keyboard-customization) platform, and even provides built-in anchor points and some basic 3d models that can be used to add your own pointing devices right between the thumb cluster and forefinger areas. I figured this could be how I could possibly _make_ the Glove80 the perfect keyboard for me.
 
 So I bought the Glove80, and a 3d printer, and got to work. This is helping me, and so I hope my efforts can help others.
 
 ## What you'll need
 
-1. The MoErgo Glove80 keyboard
-2. Soldering equipment, some wire, and a steady hand
+1. The [MoErgo Glove80 keyboard](https://www.moergo.com/collections/glove80-keyboards)
+2. Soldering equipment, [some wire](https://www.amazon.com/gp/product/B01EV70C78/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), and a steady hand ([this is a great kit for cheap](https://www.amazon.com/gp/product/B07Q2B4ZY9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1))
 3. A hot glue gun (or regular glue/tape could work in a pinch)
 4. A 3D printer (or a friend/library/makerspace/business with one)
 5. [USB Overdrive](https://www.usboverdrive.com/) or an equivalent software that allows you to invert x and y axis of your mouse (ideally per-device)
-6. Trackpoint / Rocker mouse control board (I used [this one](https://www.aliexpress.us/item/3256804502547098.html)
-7. 2.5mm screws. I'm using 8mm deep ones I got in [this kit](https://www.amazon.com/dp/B0BLCFD9HR)
+6. Trackpoint / Rocker mouse control board (I used [this one](https://www.aliexpress.us/item/3256804502547098.html))
+7. 2.5mm screws (for the Glove80 mounting holes). I'm using 8mm deep ones I got in [this kit](https://www.amazon.com/dp/B0BLCFD9HR)
 8. A USB-C breakout board (I used [this treedix board](https://treedix.com/products/treedix-4pcs-usb-type-c-breakout-board-serial-basic-breakout-female-connector-type-pcb-converter-board) also available on [Amazon here](https://www.amazon.com/dp/B096M2HQLK), but this is completely optional. I used it because I wanted to be able to "unplug" at the keyboard, instead of at the computer).
 9. These [3d model files](/models/)
 
@@ -44,7 +46,7 @@ The trackpoint rocker board (blue) comes pre-soldered onto the control board (gr
 
 These contacts are very close to each other, so be careful your solder and wires doesn't bridge from one solder point to its neighboring ones. If it does, de-solder and try again. Once finished, plug it in and make sure it still works. If it does, I recommend hot-gluing the wires in place (to protect them from bridging and breaking off easily), and testing again.
 
-Assuming that went well, the next step is to add the USB-C connector (if desired). First take a photo of the wires to make sure you know what color goes where. Here's mine if you forgot:
+Assuming that went well, the next step is to add the USB-C connector (if desired). First take a photo of the wires to make sure you know what color goes where. Try to make your cables a little longer than I did. This is so short, I had trouble getting the big green board in a good position.
 
 ![usb-c soldering](https://github.com/user-attachments/assets/853847c8-6fb5-4ad3-ba3a-a044ed8be759)
 
@@ -58,26 +60,36 @@ This model should serve as a ready-to-print piece for you, however, I've made so
 
 - The platform is widened to reach all the way to the edge of the thumb cluster
 - The platform is elongated to be taller, and follow the curve that the number row is usually on
-- The platform is deepened to go much lower, allowing the most flexibility for the amount of stuff you can put inside (however, this may limit how low you can tent the Glove80, but should accomodate the default height)
+- The platform is deepened to go much lower, allowing you to cram the maximum amount of cables/boards/stuff you can put inside (however, this may limit how low you can tent the Glove80, but should accomodate the default height)
 - It has a hole and a platform inside for the USB-C connector
 - It has a detachable bottom cover to contain and protect the electronics inside
 
 ![left hand model](https://github.com/user-attachments/assets/428b3df6-0126-462a-828f-b1354cc94f4d)
 
-I've taken a liking to using this ABS-like resin, but feel free to use what you like.
-
 If you want to use on the right-hand of the Glove80, mirror the model along the flat outer surface.
 
-Make sure that the USB-c board platform, and bottom screw surfaces are flat and free from support dots. Use the edge of a flathead screwdriver or knife if needed.
-Make sure the top and bottom parts fit neatly together. I recommend carefully screwing them together before putting anything inside.
+Make sure that the USB-C board platform, and bottom screw surfaces are flat and free from support dots. Use the edge of a flathead screwdriver or knife if needed.
+Make sure the top and bottom parts fit neatly together. I recommend carefully screwing them together to thread them before putting anything inside.
 
 # Assembly
 
-1. Carefully slide the USB-c board into the platform. it should go into the rounded hole first, and be a little difficult to get in there, but once all the way in, it should pop down into the platform. This can be screwed, hot-glued, or taped down.
-2. Take the rubber nub off of the rocker board, and position it in the corner like this, and put the rubber nub back on through the hole. This should keep it centered.
-3. Hot glue the blue rocker board down, leaving a few spots open so, if necessary, you can get under it with a flathead screwdriver to remove later if needed.
-4. Stuff the rest of the wires in the case and put the bottom on
-5. Connect a USB-c cable from the Trackpoint mouse to your computer, and make sure it still works
+1. Take the rubber nub off of the rocker board, and position it in the corner like this, and put the rubber nub back on through the hole. This should keep it centered. It won't be perfectly upright, but should be as close as you can get it. I've found a little bit crooked is ok, but a lot feels off, even though it follows the sweep of your thumb, it doesn't match up with the screen, and feels weird.
+
+2. Hot glue the blue rocker board down, leaving a few spots open so, if necessary, you can get under it with a flathead screwdriver to remove later if needed.
+
+![glue-rocker](https://github.com/user-attachments/assets/cceb6038-7fc4-49bb-9554-217d9a60804b)
+
+
+3. Carefully slide the USB-C board into the platform. it should go into the rounded hole first, and be a little difficult to get in there, but once all the way in, it should pop down into the platform. This can be screwed, hot-glued, or taped down.
+
+4. Stuff the rest of the wires in the case. The green board is large, so you'll need to tuck it in under the USB-C platform:
+
+![stuff-components](https://github.com/user-attachments/assets/72d05a20-3094-4bf5-9809-14be467a34c0)
+
+6. Put the bottom on and screw it in
+![back-on](https://github.com/user-attachments/assets/6078b19d-477a-41d9-9a05-34b77833fd0c)
+
+8. Connect a USB-c cable from the Trackpoint mouse to your computer, and make sure it still works
 
 # Glove80 mouse-keys configuration
 
@@ -92,10 +104,24 @@ By default, the MoErgo editor does not build a ZMK firmware with mouse support, 
 
 Once you flash your Glove80 with the new firmware, these keys should act as mouse buttons.
 
+![glove80-left-with-trackpoint](https://github.com/user-attachments/assets/27213585-940c-4b9b-92a7-232cd66db891)
+
 # Bonus
 
 I do most of my computer work on a Mac computer, and also use [Homerow](https://homerow.app) to add some very helpful navigation stuff. `CMD+h` will pepper your active window with a bunch of 2-letter key combos, that when typed will send a left-click at that spot/menu/link, and `CMD+j` makes whatever is focused scrollable. It's _almost_ enough to replace a lot of light mouse usage, and I highly recommend it.
 
 # TODO
 
-I plan to soon also make the buttons work with individual wired keyswitches. I have some Kalih switches and am working on making nice holes for them in the 3d model.
+- I plan to soon also make the actual Trackpoint buttons work with individual wired keyswitches. I have some Kalih switches and am working on making nice mounting holes for them in the 3d model.
+- The height/angle of the top does't _quite_ line up with the Glove80 notch
+- My screw mounts could use some work. The screw holes are a little small, and the screws aren't recessed enough to have a flat bottom
+- I may make it a little thinner on the underside in this specific model, and post a version of the deep model as a generic starter model for _your_ projects
+
+## See Also
+
+- My Glove80 Wireless Trackball mod (in progress)
+- My Glove80 Ergo Touchpad mod (in progress)
+
+I love the freedom from RSI pain this keyboard has saved me from, and I love it even more with these mouse-replacements. My pain has gotten much more managable, and I've enjoyed getting into 3d modeling and printing!
+
+Thank you to the many people who have posted on the [MoErgo Discord Community](https://www.moergo.com/discord) that helped inspire me to make this happen, and are always dropping great tips on how to optimize my computing experience.
