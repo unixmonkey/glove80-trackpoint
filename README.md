@@ -87,6 +87,7 @@ Make sure the top and bottom parts fit neatly together. I recommend carefully sc
 ![stuff-components](https://github.com/user-attachments/assets/72d05a20-3094-4bf5-9809-14be467a34c0)
 
 6. Put the bottom on and screw it in
+
 ![back-on](https://github.com/user-attachments/assets/6078b19d-477a-41d9-9a05-34b77833fd0c)
 
 8. Connect a USB-c cable from the Trackpoint mouse to your computer, and make sure it still works
@@ -95,6 +96,7 @@ Make sure the top and bottom parts fit neatly together. I recommend carefully sc
 
 Because the mouse we've just printed doesn't have the mouse buttons wired up, we probably want to map some keys on the Glove80 to act as mouse buttons.
 I've setup the 2 right and bottom-most thumb keys to act as mouse buttons in [my layout](https://my.glove80.com/#/layout/user/2e9038ef-1ab4-45dc-9edd-4a34c662d1fc) by assigning them to the "CUSTOM" behavior with "&mkp MB1" for left-click and "&mkp MB2" for right-click (I did not setup middle-click).
+
 ![thumb-buttons](https://github.com/user-attachments/assets/51838a18-f06e-4d03-8430-dec2b59a7873)
 
 It is not at all necessary, but you might consider setting up a "mouse" layer like mine above, now that you will be building a firmware capable of emulating a mouse, you might want to take advantage of that.
@@ -114,7 +116,7 @@ I do most of my computer work on a Mac computer, and also use [Homerow](https://
 
 - I plan to soon also make the actual Trackpoint buttons work with individual wired keyswitches. I have some Kalih switches and am working on making nice mounting holes for them in the 3d model.
 - The height/angle of the top does't _quite_ line up with the Glove80 notch
-- My screw mounts could use some work. The screw holes are a little small, and the screws aren't recessed enough to have a flat bottom
+- My screw mounts could use some work. The screw holes are a little small, and the screws aren't recessed enough to be flush
 - I may make it a little thinner on the underside in this specific model, and post a version of the deep model as a generic starter model for _your_ projects
 
 ## See Also
