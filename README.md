@@ -34,6 +34,8 @@ This is also a good time to install [USB Overdrive](https://www.usboverdrive.com
 When plugged in and USB Overdrive installed, go into it's settings, and choose the Trackpoint, which shows up for me as `Mouse VID 0x1018 PID 0x1006, Any Application`.
 
 Then go into "Advanced Settings", and check the boxes next to "Invert X axis" and "Invert Y axis":
+
+![usb-overdrive](https://github.com/user-attachments/assets/2bb68b5e-5e0c-4f5d-8474-0e5304376774)
 ![overdrive2](https://github.com/user-attachments/assets/8e26b8f9-85ca-4943-9d29-049e2e78bd0c)
 
 Now, the trackpoint should work correctly while upside-down.
@@ -65,13 +67,14 @@ This model should serve as a ready-to-print piece for you, however, I've made so
 - It has a detachable bottom cover to contain and protect the electronics inside
 
 ![left hand model](https://github.com/user-attachments/assets/428b3df6-0126-462a-828f-b1354cc94f4d)
+![left-hand-back](https://github.com/user-attachments/assets/42dfc230-2bdd-41da-939a-ed0dfaf01674)
 
 If you want to use on the right-hand of the Glove80, mirror the model along the flat outer surface.
 
 Make sure that the USB-C board platform, and bottom screw surfaces are flat and free from support dots. Use the edge of a flathead screwdriver or knife if needed.
 Make sure the top and bottom parts fit neatly together. I recommend carefully screwing them together to thread them before putting anything inside.
 
-# Assembly
+## Assembly
 
 1. Take the rubber nub off of the rocker board, and position it in the corner like this, and put the rubber nub back on through the hole. This should keep it centered. It won't be perfectly upright, but should be as close as you can get it. I've found a little bit crooked is ok, but a lot feels off, even though it follows the sweep of your thumb, it doesn't match up with the screen, and feels weird.
 
@@ -92,10 +95,10 @@ Make sure the top and bottom parts fit neatly together. I recommend carefully sc
 
 8. Connect a USB-c cable from the Trackpoint mouse to your computer, and make sure it still works
 
-# Glove80 mouse-keys configuration
+## Glove80 mouse-keys configuration
 
 Because the mouse we've just printed doesn't have the mouse buttons wired up, we probably want to map some keys on the Glove80 to act as mouse buttons.
-I've setup the 2 right and bottom-most thumb keys to act as mouse buttons in [my layout](https://my.glove80.com/#/layout/user/2e9038ef-1ab4-45dc-9edd-4a34c662d1fc) by assigning them to the "CUSTOM" behavior with "&mkp MB1" for left-click and "&mkp MB2" for right-click (I did not setup middle-click).
+I've setup the 2 right and bottom-most thumb keys to act as mouse buttons in [my layout](https://my.glove80.com/#/layout/user/2e9038ef-1ab4-45dc-9edd-4a34c662d1fc) by assigning them to the "CUSTOM" behavior with `&mkp MB1` for left-click and `&mkp MB2` for right-click (I did not setup middle-click).
 
 ![thumb-buttons](https://github.com/user-attachments/assets/51838a18-f06e-4d03-8430-dec2b59a7873)
 
@@ -106,13 +109,16 @@ By default, the MoErgo editor does not build a ZMK firmware with mouse support, 
 
 Once you flash your Glove80 with the new firmware, these keys should act as mouse buttons.
 
-![glove80-left-with-trackpoint](https://github.com/user-attachments/assets/27213585-940c-4b9b-92a7-232cd66db891)
+## Result
 
-# Bonus
+![glove80-left-with-trackpoint](https://github.com/user-attachments/assets/27213585-940c-4b9b-92a7-232cd66db891)
+![on-tray](https://github.com/user-attachments/assets/55c7a682-9e07-4ba5-ba30-455f57071726)
+
+## Bonus
 
 I do most of my computer work on a Mac computer, and also use [Homerow](https://homerow.app) to add some very helpful navigation stuff. `CMD+h` will pepper your active window with a bunch of 2-letter key combos, that when typed will send a left-click at that spot/menu/link, and `CMD+j` makes whatever is focused scrollable. It's _almost_ enough to replace a lot of light mouse usage, and I highly recommend it.
 
-# TODO
+## TODO
 
 - I plan to soon also make the actual Trackpoint buttons work with individual wired keyswitches. I have some Kalih switches and am working on making nice mounting holes for them in the 3d model.
 - The height/angle of the top does't _quite_ line up with the Glove80 notch
