@@ -126,8 +126,8 @@ I do most of my computer work on a Mac computer, and also use [Homerow](https://
 
 ## See Also
 
-- My Glove80 Wireless Trackball mod (in progress)
-- My Glove80 Ergo Touchpad mod (in progress)
+- My [Glove80 Wireless Trackball mod](https://github.com/unixmonkey/glove80-trackball) (in progress)
+- My [Glove80 Ergo Touchpad mod](https://github.com/unixmonkey/glove80-touchpad) (in progress)
 
 I love the freedom from RSI pain this keyboard has saved me from, and I love it even more with these mouse-replacements. My pain has gotten much more managable, and I've enjoyed getting into 3d modeling and printing!
 
