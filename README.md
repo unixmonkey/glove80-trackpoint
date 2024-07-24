@@ -80,8 +80,7 @@ Make sure the top and bottom parts fit neatly together. I recommend carefully sc
 
 2. Hot glue the blue rocker board down, leaving a few spots open so, if necessary, you can get under it with a flathead screwdriver to remove later if needed.
 
-![glue-rocker](https://github.com/user-attachments/assets/cceb6038-7fc4-49bb-9554-217d9a60804b)
-
+![glued-rocker](https://github.com/user-attachments/assets/db1ecd85-080b-4c1c-85d0-3cd586cf8329)
 
 3. Carefully slide the USB-C board into the platform. it should go into the rounded hole first, and be a little difficult to get in there, but once all the way in, it should pop down into the platform. This can be screwed, hot-glued, or taped down.
 
