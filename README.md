@@ -126,6 +126,7 @@ I do most of my computer work on a Mac computer, and also use [Homerow](https://
 
 ## See Also
 
+- These models on [Thingiverse](https://www.thingiverse.com/thing:6711751)
 - My [Glove80 Wireless Trackball mod](https://github.com/unixmonkey/glove80-trackball) (in progress)
 - My [Glove80 Ergo Touchpad mod](https://github.com/unixmonkey/glove80-touchpad) (in progress)
 
