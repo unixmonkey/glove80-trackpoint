@@ -123,6 +123,7 @@ I do most of my computer work on a Mac computer, and also use [Homerow](https://
 - The height/angle of the top does't _quite_ line up with the Glove80 notch
 - My screw mounts could use some work. The screw holes are a little small, and the screws aren't recessed enough to be flush
 - I may make it a little thinner on the underside in this specific model, and post a version of the deep model as a generic starter model for _your_ projects
+- I plan to try a version that is even closer to the corner, and does not need X/Y changed, by placing the circuit board below the thumb cluster, and extending the touchpoint with a 3d-printed extension
 
 ## See Also
 
